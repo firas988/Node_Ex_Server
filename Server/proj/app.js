@@ -14,9 +14,8 @@ const server = http.createServer((req, res) => {
   console.log(req);
   //sending html content
   res.write(file2send);
-  res.write("aaa");
   //ending
-  res.end("<br/> this is html");
+  res.end();
 });
 
 server.listen(3000, () => {});
